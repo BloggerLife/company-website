@@ -69,10 +69,7 @@ export const Header = () => {
             <Menu />
           </button>
           <Button variant="tetriary-reversed">
-            <Link
-              target="_blank"
-              href="https://www.linkedin.com/in/mac-simutumbi-992694150/"
-            >
+            <Link target="_blank" href="https://www.linkedin.com">
               Get in touch
             </Link>
           </Button>
