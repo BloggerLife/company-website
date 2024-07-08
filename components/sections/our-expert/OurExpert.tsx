@@ -19,23 +19,23 @@ export const OurExpert = async () => {
             <p className="text-neutral-400">{ourExperts.excerpt}</p>
           </div>
           <div className="mt-20">
-            {ourExperts.ourExperts.map((expert: any, index: number) => {
+            {ourExperts.ourExperts?.map((expert: any, index: number) => {
               return (
                 <div
                   key={index}
-                  className="py-8 border-b flex gap-12 items-center border-neutral-700"
+                  className="flex items-center gap-12 border-b border-neutral-700 py-8"
                 >
-                  <div className="h-[90px] w-[90px] shrink-0 relative">
+                  <div className="relative h-[90px] w-[90px] shrink-0">
                     <Image
                       src={expert.image}
                       alt="Expert Image"
                       width={90}
                       height={90}
-                      className="w-full h-full object-cover rounded-xl"
+                      className="h-full w-full rounded-xl object-cover"
                     />
                   </div>
-                  <div className="flex flex-col gap-2 sm:flex-row justify-between w-full">
-                    <div className="text-white flex flex-col sm:flex-row sm:gap-32">
+                  <div className="flex w-full flex-col justify-between gap-2 sm:flex-row">
+                    <div className="flex flex-col text-white sm:flex-row sm:gap-32">
                       <Heading as="h3" className="text-sub-title">
                         {expert.heading}
                       </Heading>

@@ -33,20 +33,20 @@ export const Header = () => {
   return (
     <header
       className={cx(
-        " sm:border-b-2 duration-300 bg-secondary-950 border-primary-300 fixed w-full py-6",
+        " fixed w-full border-primary-300 bg-secondary-950 py-2 duration-300 sm:border-b-2",
         scrollDir === "down" ? "-translate-y-full" : "translate-y-0",
-        isSanityStudio ? "z-0" : "z-20"
+        isSanityStudio ? "z-0" : "z-20",
       )}
     >
       <div className="container flex justify-between">
-        <div className="flex justify-center items-center gap-10">
+        <div className="flex items-center justify-center gap-10">
           <Link href="/" className="z-10">
             <Logo />
           </Link>
           <nav
             className={cx(
-              "list-none bg-secondary-950 sm:bg-transparent  duration-300 sm:translate-y-0 absolute h-screen top-0 left-0 w-screen justify-center flex-col sm:relative sm:h-fit sm:w-fit sm:flex-row  flex items-center text-white gap-8",
-              showMenu === true ? "translate-y-0" : "-translate-y-full"
+              "absolute left-0 top-0  flex h-screen w-screen list-none flex-col items-center justify-center gap-8 bg-secondary-950 text-white duration-300 sm:relative sm:h-fit  sm:w-fit sm:translate-y-0 sm:flex-row sm:bg-transparent",
+              showMenu === true ? "translate-y-0" : "-translate-y-full",
             )}
           >
             {headerData.header.map((item, index) => {
@@ -61,17 +61,17 @@ export const Header = () => {
           </nav>
         </div>
 
-        <div className="flex h-fit z-10">
+        <div className="z-10 flex h-fit">
           <button
             onClick={toggleMenu}
-            className="p-3 flex items-center justify-center border w-fit sm:hidden rounded-full"
+            className="flex w-fit items-center justify-center rounded-full border p-3 sm:hidden"
           >
             <Menu />
           </button>
           <Button variant="tetriary-reversed">
             <Link
               target="_blank"
-              href="https://www.linkedin.com/in/truongtritin-bruno/"
+              href="https://www.linkedin.com/in/mac-simutumbi-992694150/"
             >
               Get in touch
             </Link>

@@ -23,7 +23,7 @@ const AboutUs = async () => {
     <React.Fragment>
       <Section className="bg-white">
         <Container>
-          <div className="grid grid-cols-1 md:grid-cols-2 mb-6">
+          <div className="mb-6 grid grid-cols-1 md:grid-cols-2">
             <Heading as="h1" className="text-hero">
               {hero.heading}
             </Heading>
@@ -34,13 +34,13 @@ const AboutUs = async () => {
               </Button>
             </div>
           </div>
-          <div className="w-full rounded-xl overflow-hidden">
+          <div className="w-full overflow-hidden rounded-xl">
             <Image
               src={hero.heroImage}
               alt="About us 1"
               width={450}
               height={320}
-              className="w-full h-full object-cover"
+              className="h-full w-full object-cover"
             />
           </div>
         </Container>
@@ -49,16 +49,16 @@ const AboutUs = async () => {
         <Container>
           <Heading
             as="h2"
-            className="text-section leading-none capitalize mb-24"
+            className="mb-24 text-section capitalize leading-none"
           >
             {ourPhilosophy.heading}
           </Heading>
-          <div className="grid gap-4 sticky">
+          <div className="sticky grid gap-4">
             {ourPhilosophy.philosophys.map((item, index: number) => {
               return (
                 <div
                   key={index}
-                  className="grid md:grid-cols-2 py-12 bg-primary-300 p-4 rounded-3xl"
+                  className="grid rounded-3xl bg-primary-300 p-4 py-12 md:grid-cols-2"
                 >
                   <div>
                     <span>{item.tagline}</span>
@@ -73,47 +73,46 @@ const AboutUs = async () => {
           </div>
         </Container>
       </Section>
-      <div className="p-2 sm:p-4 bg-secondary-950">
+      <div className="bg-secondary-950 p-2 sm:p-4">
         <NewLetter />
       </div>
       <Section className="bg-white">
         <Container>
           <Heading
             as="h2"
-            className="text-section leading-none capitalize mb-24"
+            className="mb-24 text-section capitalize leading-none"
           >
             A Team of Energy Experts
           </Heading>
 
-          <div className="grid md:grid-cols-3 gap-4">
+          <div className="grid gap-4 md:grid-cols-3">
             {ourExperts.ourExperts.map((expert, index: number) => {
               return (
                 <div
                   key={index}
-                  className="col-span-1 relative h-[600px] rounded-xl overflow-hidden"
+                  className="relative col-span-1 overflow-hidden rounded-xl"
                 >
                   <Image
                     src={expert.image}
                     alt="Member"
-                    width={320}
-                    height={450}
-                    className="w-full h-full object-cover"
+                    width={450}
+                    height={320}
+                    className="h-full w-full object-cover"
                   />
-                  <div className="absolute group bottom-2 overflow-hidden px-2  backdrop-blur-2xl w-full">
-                    <div className="bg-primary-300 flex-col group-hover:h-[240px] min-h-10 h-0 duration-300 px-6 py-2  flex justify-between rounded-xl">
-                      <div className="flex justify-between items-center">
+                  <div className="group absolute bottom-2 w-full overflow-hidden  px-2 backdrop-blur-2xl">
+                    <div className="flex h-0 min-h-10 flex-col justify-between rounded-xl bg-primary-300 px-6  py-2 duration-300 group-hover:h-[70px]">
+                      <div className="flex items-center justify-between">
                         <Heading
                           as="h4"
                           className="text-label font-semibold leading-none"
                         >
                           {expert.heading}
                         </Heading>
-                        <span>{expert.tagline}</span>
                         <Link href="/">
                           <LindkedlnFooter />
                         </Link>
                       </div>
-                      <ul className="h-0 translate-y-3 my-4 group-hover:translate-y-0 group-hover:h-full duration-300">
+                      <ul className="my-4 h-0 translate-y-3 duration-300 group-hover:h-full group-hover:translate-y-0">
                         <li className="text-sub-title">{expert.excerpt}</li>
                       </ul>
                     </div>

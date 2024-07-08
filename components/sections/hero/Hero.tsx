@@ -12,8 +12,8 @@ const Hero = async () => {
   const { hero, gallery, promotion } = data;
 
   return (
-    <Section className="bg-secondary-950 h-fit flex flex-col gap-32">
-      <Container className="h-1/2 flex justify-center items-center">
+    <Section className="flex h-fit flex-col gap-32 bg-secondary-950">
+      <Container className="flex h-1/2 items-center justify-center">
         <div className="grid grid-cols-1 xl:grid-cols-2">
           <div className="text-white">
             <Heading as="h1" className="text-hero leading-none">
@@ -21,16 +21,16 @@ const Hero = async () => {
             </Heading>
           </div>
           <div className="mt-10 xl:mt-0">
-            <p className="text-base text-white mb-10">{hero.tagline}</p>
+            <p className="mb-10 text-base text-white">{hero.tagline}</p>
             <Button variant="secondary">
-              <Link href={promotion.link}>{promotion.title}</Link>
+              <Link href={promotion.link}>See our About</Link>
             </Button>
           </div>
         </div>
       </Container>
-      <div className="w-full col-span-2 h-1/2">
+      <div className="col-span-2 h-1/2 w-full">
         <Marquee autoFill>
-          <div className="flex justify-center gap-6 items-start mx-3">
+          <div className="mx-3 flex items-start justify-center gap-6">
             {gallery.imageUrls.map((item: any) => {
               return (
                 <>

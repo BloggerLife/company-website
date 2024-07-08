@@ -11,28 +11,32 @@ export const AboutUs = async () => {
     <Section className="bg-secondary-950">
       <Container>
         <SubTitle subTitle={aboutUs.tagline} />
-        <div className="grid xl:grid-cols-2 gap-12 md:gap-36">
-          <div className="flex justify-center flex-col gap-6">
+        <div className="grid gap-12 md:gap-36 xl:grid-cols-2">
+          <div className="flex flex-col justify-center gap-6">
             <Heading as="h2" className="text-section leading-none text-white">
               {aboutUs.heading}
             </Heading>
             <p className="text-white">{aboutUs.excerpt}</p>
-            <ul className="mt-4 grid grid-cols-2 xl:grid-cols-1 gap-4">
+            <ul className="mt-4 grid grid-cols-2 gap-4 xl:grid-cols-1">
               <li className="flex items-center gap-3 text-white">
                 <Check />
-                Check item
+                Competent
               </li>
               <li className="flex items-center gap-3 text-white">
                 <Check />
-                Check item
+                Reliable
               </li>
               <li className="flex items-center gap-3 text-white">
                 <Check />
-                Check item
+                Proactive
               </li>
               <li className="flex items-center gap-3 text-white">
                 <Check />
-                Check item
+                Honorable
+              </li>
+              <li className="flex items-center gap-3 text-white">
+                <Check />
+                Professionalism
               </li>
             </ul>
           </div>

@@ -13,11 +13,11 @@ const nextConfig = {
     ],
   },
   env: {
-    NOTION_DATABASE_ID: "51b1c5db34e24dbb8e38ff01139a6e07",
+    NOTION_DATABASE_ID: "243965e5e6004d1c87613042d69d78e1",
     SANITY_STUDIO_DATASET: "production",
-    SANITY_STUDIO_PROJECT_ID: "55suof4b",
+    SANITY_STUDIO_PROJECT_ID: "dh88dxut",
     NOTION_INTERNAL_INTEGRATION_TOKEN:
-      "secret_N0XxyyOsDhmmLImH41H26A8mVq8AAMeh2qSBYIt3L7Z",
+      "secret_cRgjvmX3JTsuFbqEvJicBAWWRBnf0b6lJewhn2dLma2",
   },
 };
 
