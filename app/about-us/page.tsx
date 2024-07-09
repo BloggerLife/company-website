@@ -108,7 +108,7 @@ const AboutUs = async () => {
                         >
                           {expert.heading}
                         </Heading>
-                        <Link href="/">
+                        <Link href="https://www.linkedin.com/in/tonderai-mtekesa-0674231b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
                           <LindkedlnFooter />
                         </Link>
                       </div>

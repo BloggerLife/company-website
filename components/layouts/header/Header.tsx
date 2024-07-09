@@ -69,7 +69,10 @@ export const Header = () => {
             <Menu />
           </button>
           <Button variant="tetriary-reversed">
-            <Link target="_blank" href="https://www.linkedin.com">
+            <Link
+              target="_blank"
+              href="https://www.linkedin.com/in/tonderai-mtekesa-0674231b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            >
               Get in touch
             </Link>
           </Button>

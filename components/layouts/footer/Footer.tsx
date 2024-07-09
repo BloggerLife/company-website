@@ -10,19 +10,19 @@ import Link from "next/link";
 export const Footer = () => {
   return (
     <div className="p-4">
-      <footer className="bg-secondary-950 rounded-3xl py-24 sm:py-48 relative overflow-hidden">
-        <div className="absolute h-full top-0">
+      <footer className="relative overflow-hidden rounded-3xl bg-secondary-950 py-24 sm:py-48">
+        <div className="absolute top-0 h-full">
           <FooterBg />
         </div>
         <div className="container relative">
-          <div className="grid sm:grid-cols-6 xl:grid-cols-12 gap-8">
+          <div className="grid gap-8 sm:grid-cols-6 xl:grid-cols-12">
             <div className="col-span-3">
               <Logo />
             </div>
-            <div className="col-span-9 grid sm:grid-cols-9 gap-8">
-              <div className="col-span-3 w-full grid-cols-2 gap-4 sm:grid-cols-3 sm:gap-0 grid sm:col-span-6">
-                <ul className="list-none text-white grid gap-6">
-                  <label className="text-white font-semibold">Platform</label>
+            <div className="col-span-9 grid gap-8 sm:grid-cols-9">
+              <div className="col-span-3 grid w-full grid-cols-2 gap-4 sm:col-span-6 sm:grid-cols-3 sm:gap-0">
+                <ul className="grid list-none gap-6 text-white">
+                  <label className="font-semibold text-white">Platform</label>
                   <li>
                     <Link href="/">Solutions</Link>
                   </li>
@@ -33,14 +33,14 @@ export const Footer = () => {
                     <Link href="/">Pricing</Link>
                   </li>
                 </ul>
-                <ul className="list-none text-white grid gap-6">
-                  <label className="text-white font-semibold">Company</label>
+                <ul className="grid list-none gap-6 text-white">
+                  <label className="font-semibold text-white">Company</label>
                   <li>
                     <Link href="/">Solutions</Link>
                   </li>
                   <li>
                     <Link href="/">Careers</Link>
-                    <span className="ml-2 p-1 bg-primary-300 rounded-md text-black">
+                    <span className="ml-2 rounded-md bg-primary-300 p-1 text-black">
                       Hiring
                     </span>
                   </li>
@@ -48,8 +48,8 @@ export const Footer = () => {
                     <Link href="/">Pricing</Link>
                   </li>
                 </ul>
-                <ul className="list-none text-white grid gap-6">
-                  <label className="text-white font-semibold">Resources</label>
+                <ul className="grid list-none gap-6 text-white">
+                  <label className="font-semibold text-white">Resources</label>
                   <li>
                     <Link href="/">Solutions</Link>
                   </li>
@@ -62,28 +62,30 @@ export const Footer = () => {
                 </ul>
               </div>
               <div className="col-span-3 grid gap-4 sm:col-end-10">
-                <div className="flex items-center gap-4 p-1 bg-white/25 rounded-full">
-                  <span className="bg-primary-300 p-3 flex items-center justify-center rounded-full">
+                <div className="flex items-center gap-4 rounded-full bg-white/25 p-1">
+                  <span className="flex items-center justify-center rounded-full bg-primary-300 p-3">
                     <Facebook />
                   </span>
-                  <p className="text-white font-medium">
+                  <p className="font-medium text-white">
                     Follow us on Facebook
                   </p>
                 </div>
-                <div className="flex items-center gap-4 p-1 bg-white/25 rounded-full">
-                  <span className="bg-primary-300 p-3 flex items-center justify-center rounded-full">
+                <div className="flex items-center gap-4 rounded-full bg-white/25 p-1">
+                  <span className="flex items-center justify-center rounded-full bg-primary-300 p-3">
                     <Instagram />
                   </span>
-                  <p className="text-white font-medium">
+                  <p className="font-medium text-white">
                     Follow us on Instagram
                   </p>
                 </div>
-                <div className="flex items-center gap-4 p-1 bg-white/25 rounded-full">
-                  <span className="bg-primary-300 p-3 flex items-center justify-center rounded-full">
+                <div className="flex cursor-pointer items-center gap-4 rounded-full bg-white/25 p-1">
+                  <span className="flex items-center justify-center rounded-full bg-primary-300 p-3">
                     <LindkedlnFooter />
                   </span>
-                  <p className="text-white font-medium">
-                    Follow us on Linkedln
+                  <p className=" font-medium text-white">
+                    <Link href="https://www.linkedin.com/in/tonderai-mtekesa-0674231b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+                      Follow us on Linkedln
+                    </Link>
                   </p>
                 </div>
               </div>
