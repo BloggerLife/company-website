@@ -110,6 +110,18 @@ export async function getAboutpage() {
       heading
       }
     },
+
+        'ourVideos':pageBuilder[][_type == "ourVideos"][0]{
+      heading,
+      tagline,
+      excerpt,
+      'ourVideos':ourVideos[]{
+      'link': cta.link, 
+      'file': file.asset-> url,
+      tagline,
+      heading
+      }
+    },
   
 }`;
 

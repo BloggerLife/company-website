@@ -19,6 +19,7 @@ import { promotionType } from "./schemaTypes/promotionType";
 import { solutionsType } from "./schemaTypes/solutions";
 import { testimonialsType } from "./schemaTypes/testimonials";
 import textWithIllustrationType from "./schemaTypes/textWithIllu";
+import videoGalleryType from "./schemaTypes/videos";
 
 export const schema: { types: SchemaTypeDefinition[] } = {
   types: [
@@ -37,6 +38,7 @@ export const schema: { types: SchemaTypeDefinition[] } = {
     solutionsType,
     ourPhilosophy,
     imageGalleryType,
+    videoGalleryType,
     testimonialsType,
     jobInformationType,
     priceInformationType,
