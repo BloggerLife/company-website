@@ -82,7 +82,7 @@ const AboutUs = async () => {
             as="h2"
             className="mb-24 text-section capitalize leading-none"
           >
-            A Team of Experts
+            Our Team of Experts
           </Heading>
 
           <div className="grid gap-4 md:grid-cols-3">
